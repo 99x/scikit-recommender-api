@@ -1,4 +1,4 @@
-FROM python
+FROM ruimashita/numpy
 
 MAINTAINER dilumnavanjana@gmail.com
 
@@ -6,5 +6,4 @@ MAINTAINER dilumnavanjana@gmail.com
 RUN pip install -U numpy scipy scikit-learn
 
 #Install Jupyter
-RUN pip3 install --upgrade pip
-RUN pip3 install jupyter
+RUN pip install jupyter
