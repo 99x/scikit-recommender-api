@@ -1,9 +1,24 @@
-FROM ruimashita/numpy
+FROM 99xt/scikit-base
 
 MAINTAINER dilumnavanjana@gmail.com
 
-#Install scikit-learn with dependencies
-RUN pip install -U numpy scipy scikit-learn
+#Install npm & nodejs
+RUN apt-get update -y
+RUN apt-get install nodejs npm -y
 
-#Install Jupyter
-RUN pip install jupyter
+RUN pip install flask
+
+RUN npm install -g n
+RUN n stable
+RUN npm update
+
+#Clone the WebApp Repo & update npm
+RUN git clone https://github.com/99xt/scikit-api.git
+
+#Start python server
+RUN python scikit-api/server.py &
+
+#Start web server
+WORKDIR scikit-api/web/ui
+RUN npm install
+CMD npm start
