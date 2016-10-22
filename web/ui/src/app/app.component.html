@@ -1,17 +1,36 @@
-<header>
-  <nav>
-    <a [routerLink]="['']">Home</a>
-    <a [routerLink]="['input']">Input</a>
-    <a [routerLink]="['output']">Output</a>
-  </nav>
-</header>
-<main>
-  <h1>Hello from {{api.title}}!</h1>
+<!--<header>-->
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="/img/99x.png" alt="99XT Logo" style="height:160%;" ></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a [routerLink]="['']">Home</a></li>
+        <li><a [routerLink]="['input']">Input <i></i></a></li>
+      <li><a [routerLink]="['output']">Output</a></li> 
+<!--      <li><a href="#">Page 3</a></li> -->
+    </ul>
+  </div>
+</nav>
+<!-- <header> -->
+<div class="back">
+<main >
+  <h1>Say hello to Machine learning</h1>
 
   <!-- Images (and assets) are parsed and loaded from within the public directory -->
   <img src="/img/angular.png">
 
   <router-outlet></router-outlet>
 </main>
+    </div>
 <footer>
+    <div class="container">
+ 
+  <hr>
+    
+   
+        <p class="muted pull-right">© 2016 99x Technology | All rights reserved</p>
+     
+    </div>
+
 </footer>
