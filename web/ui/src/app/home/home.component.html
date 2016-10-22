@@ -14,28 +14,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6" style=" position: absolute; left: 30%; top:relative;">
-                    <form action="" method="post">
-                        <table border="0">
-                        <tr class="form-group">
-                            <th><h4>Upload DataSet 1 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
-                            <th><input type="file" class="form-control" name ="DataSet1"></th>
-                        </tr>
-                        <tr class="form-group">
-                            <th><h4>Upload DataSet 2 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
-                            <th><input type="file" class="form-control" name ="DataSet2"></th>
-                        </tr>
-                        <tr class="form-group">
-                            <th><h4>Upload DataSet 3 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
-                            <th><input type="file" class="form-control" name ="DataSet3"></th>
-                        </tr>
-                        <tr align="center">
-                        <br>
-                            <td colspan="1">
-                            <Button href="" class="btn btn-block btn-lg btn-dark" style="position: relative; left:70%;">Generate Model</Button>
-                            </td>
-                        </tr>
-                        </table>
-                    </form>
+                    <div ng2FileDrop
+                         [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+                         (fileOver)="fileOverBase($event)"
+                         [uploader]="uploader"
+                         class="well my-drop-zone">
+                        Drop your data file 1 here.
+                    </div>
+                    <button type="button" class="btn btn-success btn-s"
+                        (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+                        <span class="glyphicon glyphicon-upload"></span> Upload all
+                    </button>
                 </div>
             </div>
         </div>

@@ -10,6 +10,8 @@ import { OutputComponent } from './output/output.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
+import { FileDropDirective } from 'ng2-file-upload';
+
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
 @NgModule({
@@ -23,7 +25,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     AppComponent,
     HomeComponent,
     InputComponent,
-    OutputComponent
+    OutputComponent,
+    FileDropDirective
   ],
   providers: [
     ApiService

@@ -2,6 +2,8 @@
 var path = require('path');
 var webpack = require('webpack');
 
+var cors = require('cors');
+
 // Webpack Plugins
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var autoprefixer = require('autoprefixer');
@@ -267,7 +269,11 @@ module.exports = function makeWebpackConfig() {
     contentBase: './src/public',
     historyApiFallback: true,
     quiet: true,
-    stats: 'minimal' // none (or false), errors-only, minimal, normal (or true) and verbose
+    stats: 'minimal', // none (or false), errors-only, minimal, normal (or true) and verbose
+    setup: function(app){
+      app.options('*', cors());
+      app.use(cors());
+    }
   };
 
   return config;
