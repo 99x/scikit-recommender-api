@@ -10,21 +10,55 @@
     </section>
 
     <!-- Call to Action -->
-    <Section id="form" class="call-to-action bg-primary" style="height:46%">
-        <div class="container">
+    <Section id="form" class="call-to-action bg-primary">
+        <div class="container center" >
             <div class="row">
-                <div class="col-lg-6" style=" position: absolute; left: 30%; top:relative;">
-                    <div ng2FileDrop
-                         [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
-                         (fileOver)="fileOverBase($event)"
-                         [uploader]="uploader"
-                         class="well my-drop-zone">
-                        Drop your data file 1 here.
-                    </div>
-                    <button type="button" class="btn btn-success btn-s"
-                        (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
-                        <span class="glyphicon glyphicon-upload"></span> Upload all
-                    </button>
+                <div class="col-lg-6">
+                    <form action="" method="post">
+                        
+                        <table class="table responsive tableCenter">
+                               <tr class="form-group">
+                            <th><h4>Upload DataSet 1 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="form-control" name ="DataSet1"></th>
+                        </tr>
+                        <tr class="form-group">
+                            <th><h4>Upload DataSet 2 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="form-control" name ="DataSet2"></th>
+                        </tr>
+                        <tr class="form-group">
+                            <th><h4>Upload DataSet 3 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="form-control" name ="DataSet3"></th>
+                        </tr>
+                        <tr align="center">
+                        <br>
+                            
+                            <Button href="" class="btn btn-block btn-lg btn-dark" style="position: relative; left:70%;">Generate Model</Button>
+                            
+                        </tr>
+                              </table>
+<!--
+                        <table border="0" class="" >
+                        <tr class="form-group">
+                            <th><h4>Upload DataSet 1 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="fo rm-control" name ="DataSet1"></th>
+                        </tr>
+                        <tr class="form-group">
+                            <th><h4>Upload DataSet 2 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="form-control" name ="DataSet2"></th>
+                        </tr>
+                        <tr class="form-group">
+                            <th><h4>Upload DataSet 3 &nbsp;&nbsp;&nbsp;&nbsp;</h4></th>
+                            <th><input type="file" class="form-control" name ="DataSet3"></th>
+                        </tr>
+                        <tr align="center">
+                        <br>
+                            <td colspan="1">
+                            <Button href="" class="btn btn-block btn-lg btn-dark" style="position: relative; left:70%;">Generate Model</Button>
+                            </td>
+                        </tr>
+                        </table>
+-->
+                    </form>
                 </div>
             </div>
         </div>
