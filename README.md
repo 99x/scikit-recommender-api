@@ -4,16 +4,13 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/scikit-api/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Build Status](https://api.travis-ci.org/99xt/scikit-api.svg?branch=master)](https://travis-ci.org/99xt/scikit-api)
 
-# scikit-api
-Scikit API
+#Scikit API
 =================================
+## Overview
+Scikit API is  professional professionally crafted state-of-art. Recommender system API service service which run as a simplified web service.It is based on popular python machine learning library  known as [Scikit-learn](http://scikit-learn.org/stable/ ). As the  entire service is developed inside a [Docker container](https://hub.docker.com/r/99xt/scikit-api/), anyone can easily up and run the service without  worrying about underlying infrastructure and low level details.  
 
-## This Plugin Requires
-* SciKit Learn
-* Python
+Currently it’s currently under development and all are welcome to contribute!. 
 
-## Features
-* Install scikit-api
 
 ## Install Plugin
-`npm install --save scikit-api`
+`docker run 99xt/scikit-api`
