@@ -3,8 +3,7 @@ FROM 99xt/scikit-base
 MAINTAINER dilumnavanjana@gmail.com
 
 #Install npm & nodejs
-RUN apt-get update -y
-RUN apt-get install nodejs npm -y && apt-get install -y supervisor
+RUN apt-get update -y && apt-get install nodejs npm supervisor -y
 
 #install flask
 RUN pip install flask
@@ -12,15 +11,18 @@ RUN pip install flask
 #update npm & node
 RUN npm install -g n && n stable && npm update
 
-#Clone the WebApp Repo & update npm
-RUN git clone https://github.com/99xt/scikit-api.git && git checkout docker-dev
+#Clone the Repo
+RUN git clone https://github.com/99xt/scikit-api.git
 
+#Copy supervisor.conf file from repo
 COPY scikit-api/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-#Start web server
+#npm install
 WORKDIR scikit-api/web/ui
-#RUN npm install
-#ENTRYPOINT python ../../server.py --no-daemon && npm start --no-daemon
+RUN npm install
+WORKDIR ../../../
+
+EXPOSE 8080
 
 # run supervisord
-CMD ["/usr/bin/supervisord"]
+ENTRYPOINT ["/usr/bin/supervisord"]
