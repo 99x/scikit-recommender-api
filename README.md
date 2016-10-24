@@ -2,7 +2,7 @@
 
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/scikit-api/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Build Status](https://api.travis-ci.org/99xt/scikit-api.svg?branch=master)](https://travis-ci.org/99xt/scikit-api)
+[![Build Status](https://api.travis-ci.org/99xt/scikit-api.svg?branch=master)](https://travis-ci.org/99xt/scikit-api) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9d40f105d554510bd797911d7f16f63)](https://www.codacy.com/app/99xt/scikit-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=99xt/scikit-api&amp;utm_campaign=Badge_Grade)
 
 #Scikit API
 =================================
