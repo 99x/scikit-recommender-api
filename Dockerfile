@@ -15,7 +15,9 @@ RUN npm install -g n && n stable && npm update
 RUN git clone https://github.com/99xt/scikit-api.git
 
 #Copy supervisor.conf file from repo
-COPY scikit-api/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+WORKDIR scikit-api
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+WORKDIR ..
 
 #npm install
 WORKDIR scikit-api/web/ui
