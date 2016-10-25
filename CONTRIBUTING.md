@@ -1,6 +1,6 @@
 #How to contribute
 
-Fork, then clone the repo:
+Fork the repository, then clone the repo:
 <pre><code>git clone git@github.com:your-username/scikit-api.git</code></pre>
 
 Using that repository, add your changes.
