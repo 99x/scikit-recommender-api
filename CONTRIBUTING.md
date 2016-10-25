@@ -1,3 +1,5 @@
+Great to have you here! Here are a few ways you can help out with `Scikit-api`
+
 #How to contribute
 
 Fork the repository, then clone the repo:
