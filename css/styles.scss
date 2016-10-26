@@ -1,0 +1,73 @@
+---
+# Main Stylesheet
+---
+
+@import "base";
+@import "header";
+@import "section";
+@import "footer";
+
+.clear {
+  clear: both;
+	display: block;
+
+  &:after {
+  	display: block;
+  	clear: both;
+  	visibility: hidden;
+  	line-height: 0;
+  	height: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+	body {
+    font-size: 0.9em;
+  }
+
+	.width {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+	.column-left,
+  .column-right {
+    margin:0px;
+  }
+
+	header h1,
+  header h2,
+  nav#mainnav li a {
+    text-align:center;
+  }
+
+	section#content, aside#sidebar {
+    position: relative;
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+
+	body {
+    font-size: 0.8em;
+  }
+
+	header,
+  header h1 a,
+  header h1 a:hover {
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 1.1em;
+  }
+
+	nav#mainnav ul li a {
+    margin-top: 0;
+    padding: 1em;
+  }
+}
