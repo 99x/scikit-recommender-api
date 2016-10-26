@@ -1,0 +1,28 @@
+/**
+ * Scikit API
+ *
+ * Footer Styles
+ */
+
+footer {
+	padding:20px 0px;
+
+  p {
+  	color:#666;
+  	margin:0;
+  	font-size:0.8em;
+  	text-align: center;
+
+    a {
+    	color:#666;
+    	font-weight:bold;
+    	text-decoration:none;
+    	border-bottom:1px solid #999;
+
+      &:hover {
+        color: #333;
+        border-bottom-color: #333;
+      }
+    }
+  }
+}
