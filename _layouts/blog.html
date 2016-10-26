@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section id="content" class="column-right">
+  <article class="expanded">
+    <h3>{{ page.title }}</h3>
+    <div class="article-info">
+      Posted on <time datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time> by <a href="{{ page.author_url }}" rel="author">Kushal Pandya</a>
+    </div>
+    {{ content }}
+  </article>
+  {% include footer.html %}
+</section>

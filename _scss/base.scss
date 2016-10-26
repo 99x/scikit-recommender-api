@@ -1,0 +1,183 @@
+/**
+ * Scikit API
+ *
+ * Base Element Styles
+ */
+
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro: 400,700");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0;
+	background: #222;
+	font-family: "Source Sans Pro","sans-serif";
+	font-size:  1.0em;
+	color: #666;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+
+  th, td {
+    padding: 5px 10px;
+  }
+
+  th {
+  	color: #fff;
+  	border-top: 1px solid #222;
+  	background-color: #2F2F2F;
+  }
+
+  td {
+  	border-bottom: 1px solid #f4f4f4;
+  }
+}
+
+code, blockquote {
+	display: block;
+	border-left: 5px solid #ddd;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+blockquote p {
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	height:  1%;
+}
+
+p {
+	line-height: 2.0em;
+	margin-bottom: 20px;
+}
+
+a {
+	color:  #607d8b;
+
+  &:hover {
+  	color: #000;
+  }
+
+  &:focus {
+  	outline: none;
+  }
+}
+
+a {
+
+  &.button {
+    background-color: #607d8b;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 22px;
+    font-size: 0.8em;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+    	background-color: darken(#607d8b, 10%);
+    }
+  }
+
+  &.button-reversed {
+    background-color: #333;
+
+    &:hover {
+    	background-color:  #222;
+    }
+  }
+}
+
+fieldset {
+	display: block;
+	border: none;
+	border-top: 1px solid #e0e0e0;
+
+  legend {
+  	font-weight: bold;
+  	padding-right: 10px;
+  	color: #999;
+  }
+
+  form {
+  	padding-top: 15px;
+
+    input,
+    select,
+    textarea {
+      padding: 5px;
+    	color: #333333;
+    	font-size: 13px;
+    	font-family:  "Source Sans Pro","sans-serif";
+    	border: 1px solid #ddd;
+    }
+
+    input.formbutton {
+      border: none;
+      background-color: #607d8b;
+      border-radius: 5px;
+      color: #FFFFFF;
+      display: inline-block;
+      font-weight: bold;
+      padding: 8px 22px;
+      font-size: 0.8em;
+      letter-spacing: 0.25px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  p label {
+  	float: left;
+  	width: 150px;
+  	font-family:  "Source Sans Pro","sans-serif";
+  }
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	color: #607d8b;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding: 0 0 5px;
+	margin: 0;
+}
+
+h3 {
+	color: #607d8b;
+	font-size: 1.6em;
+	padding-bottom: 10px;
+}
+
+h4 {
+	padding-bottom: 10px;
+	font-size: 1.4em;
+	color: #000;
+}
+
+h5 {
+	padding-bottom: 10px;
+	font-size: 1.2em;
+	color: #666666;
+}
+
+ul, ol {
+	margin: 0 0 35px 35px;
+}
+
+li {
+	padding-bottom: 5px;
+}

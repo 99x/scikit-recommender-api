@@ -1,0 +1,22 @@
+---
+layout: default
+category_type: 'blog'
+---
+<section id="content" class="column-right">
+  {% for post in site.posts %}
+  {% unless post.draft %}
+    <article class="expanded">
+      <h3>{{ post.title }}</h3>
+      <div class="article-info">
+        Posted on <time datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time> by <a href="{{ post.author_url }}" rel="author">Kushal Pandya</a>
+      </div>
+      <p>
+        {{ post.excerpt | strip_html }}
+      </p>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read more</a>
+      <a href="#" class="button button-reversed">Comments</a>
+    </article>
+  {% endunless %}
+  {% endfor %}
+  {% include footer.html %}
+</section>

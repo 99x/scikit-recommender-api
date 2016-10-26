@@ -1,0 +1,19 @@
+<aside id="sidebar" class="column-left">
+  <header>
+    <h1>
+      <a href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/assets/scikit-api-logo.png" class="site-logo" alt="Scikit API"/>
+      </a>
+    </h1>
+    <h2>Recommender System API</h2>
+  </header>
+  <nav id="mainnav">
+    <ul>
+      <li class="{% if page.category_type == 'blog' %} selected-item {% endif %}"><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+      <li class="{% if page.category_type == 'usage-examples' %} selected-item {% endif %}"><a href="{{ site.baseurl }}/examples/">Usage Examples</a></li>
+      <li class="{% if page.category_type == 'api-docs' %} selected-item {% endif %}"><a href="#">API Docs</a></li>
+      <li class="{% if page.category_type == 'about' %} selected-item {% endif %}"><a href="#">About Us</a></li>
+      <li class="{% if page.category_type == 'contact' %} selected-item {% endif %}"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</aside>
