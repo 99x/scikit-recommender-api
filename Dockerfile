@@ -3,7 +3,7 @@ FROM 99xt/scikit-base
 MAINTAINER dilumnavanjana@gmail.com
 
 #Install npm & nodejs
-RUN apt-get update -y
+#RUN apt-get update -y
 RUN apt-get install nodejs npm -y
 
 RUN pip install flask
