@@ -1,0 +1,35 @@
+/**
+ * Scikit API
+ *
+ * Header Styles
+ */
+
+header {
+	padding: 30px 17px 30px;
+	margin: 0 auto;
+
+  h1 {
+  	text-align: right;
+
+    a {
+
+      &,
+      &:hover,
+      &:visited {
+        color: #fff;
+      	font-size: 1.5em;
+      	text-decoration: none;
+      	letter-spacing:-2px;
+      }
+    }
+  }
+
+  h2 {
+  	color: #263238;
+  	text-align: right;
+  	font-size: 0.8em;
+  	font-weight: normal;
+  	padding-bottom: 0;
+  	letter-spacing: 0;
+  }
+}
