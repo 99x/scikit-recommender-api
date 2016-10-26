@@ -1,0 +1,22 @@
+#
+# This file contains configuration flags to customize site
+#
+
+# Title, author and description
+name: scikit-api
+title: Scikit API
+description: Scikit API is professional professionally crafted state-of-art. Recommender system API service service which run as a simplified web service.
+
+# URL information
+url: "https://99xt.github.io/" # the base hostname & protocol for your site
+baseurl: "/scikit-api" # the subpath of your site, e.g. /blog/
+
+# Content settings
+excerpt_separator: <!-- excerptend -->
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+    sass_dir: _scss
+    style: compressed
