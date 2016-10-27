@@ -1,3 +1,14 @@
+﻿
+## This Plugin Requires
+* SciKit Learn
+* Python
+
+## Features
+* Install scikit-api
+
+## Install Plugin
+`npm install --save scikit-api`
+
 ![scikit-api](https://s13.postimg.org/40h42f59j/logo_scikit_lores.png)
 
 
