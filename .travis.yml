@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.4"
+
+install: true
+
+script: true
+
+after_success: true
