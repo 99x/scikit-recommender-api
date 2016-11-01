@@ -9,7 +9,7 @@
 Official page at [https://99xt.github.io/scikit-api/](https://99xt.github.io/scikit-api/).
 
 ## Overview
-Scikit API is a professionally-crafted state-of-art recommender system API service which runs as a simplified web service. It is based on popular python machine learning library known as [Scikit-learn](http://scikit-learn.org/stable/ ). As the  entire service is developed inside a [Docker container](https://hub.docker.com/r/99xt/scikit-api/), anyone can easily up and run the service without worrying about underlying infrastructure and low level details.
+Scikit API is a professionally-crafted state-of-the-art recommender system API service which runs as a simplified web service. It is based on popular python machine learning library known as [Scikit-learn](http://scikit-learn.org/stable/ ). As the  entire service is developed inside a [Docker container](https://hub.docker.com/r/99xt/scikit-api/), anyone can easily up and run the service without worrying about underlying infrastructure and low level details.
 
 SciKit API is highly recommended to be used as a boilerplate for beginners in Docker Services, Machine Learning and Application Development using AngularJS2. 
 
