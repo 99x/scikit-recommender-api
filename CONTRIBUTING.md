@@ -13,4 +13,4 @@ All issues and pull requests are welcome on GitHub at https://github.com/99xt/sc
 #License
 
 [MIT License](https://github.com/99xt/scikit-api/blob/master/LICENSE)
-Copyright (c) 2016 99X Technology
+Copyright (c) 2017 99X Technology
